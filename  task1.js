@@ -39,7 +39,7 @@ divContener.append(fourthbutton);
 const firstImge = document.getElementById("img1");
 firstImge.style.width = "230px";
 firstImge.style.height = "200px";
-function hideimge() {
+ hideimge = ()  => {
   firstImge.style.display = "none";
 }
 fourthbutton.addEventListener("click", hideimge);
@@ -55,7 +55,7 @@ createimge.innerHTML =
   "<img src=https://www.filterforge.com/more/help/images/size200.jpg>";
 
 const imgeplace = document.getElementById("imgecontener");
-function Alternate() {
+ Alternate = ()  => {
   firstImge.style.display = "none";
   imgeplace.append(createimge);
 }
@@ -65,11 +65,11 @@ fifthButton.addEventListener("click", Alternate);
 const createnewimge = document.createElement("imge");
 createnewimge.innerHTML =
   "<img src=https://i.pinimg.com/564x/ce/ec/4b/ceec4b056e8c54db51945637f0d31de9.jpg>";
-function changeImgeHover() {
+ changeImgeHover = () => {
   firstImge.style.display = "none";
   imgeplace.append(createnewimge);
 }
-function changeImgeHover2() {
+ changeImgeHover2 = ()  => {
   firstImge.style.display = "block";
   // createl6.style.display =  "none" ;
   createnewimge.remove();
@@ -82,14 +82,14 @@ imgeplace.addEventListener("mouseleave", changeImgeHover2);
 const imgeforalert = document.getElementById("img0");
 imgeforalert.style.width = "150px";
 imgeforalert.style.hideimge = "150px";
-function createAlert() {
+ createAlert = ()  => {
   alert("Hello! I am an alert box!");
 }
 imgeforalert.addEventListener("contextmenu", createAlert);
 
 // 8 Create an alert on the page when a user enters data into a input.
 const inputBoxforalert = document.getElementById("inputBox");
-function createAlertForInput() {
+ createAlertForInput = () => {
   alert("Hello! It's nice to hear from you");
 }
 inputBoxforalert.addEventListener("input", createAlertForInput);
