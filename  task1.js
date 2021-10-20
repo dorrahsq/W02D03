@@ -92,7 +92,7 @@ const inputBoxforalert = document.getElementById("inputBox");
  createAlertForInput = () => {
   alert("Hello! It's nice to hear from you");
 }
-inputBoxforalert.addEventListener("input", createAlertForInput);
+inputBoxforalert.addEventListener("change", createAlertForInput);
 
 // 9 Create an alert to let the user know when the page has loaded
 window.onload = function () {
